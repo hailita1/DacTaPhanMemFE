@@ -1,0 +1,48 @@
+.order-in-detail {
+  border-radius: 5px;
+  border: 1px solid rgba(108, 108, 108, 0.6);
+}
+
+.name-house {
+  margin-top: 50px;
+}
+
+.info-house {
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid rgba(108, 108, 108, 0.6);
+}
+
+.detail {
+  font-size: 20px;
+}
+
+.thumbnail {
+  position: relative;
+  text-align: center;
+  border: 1px solid rgba(108, 108, 108, 0.6);
+  border-radius: 5px;
+}
+
+img {
+  transition: transform .8s !important;
+}
+
+.images img:hover {
+  transform: scale(1.1) !important;
+  border-radius: 10px;
+}
+
+.booked {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(242, 255, 243);
+}
+
+
+.room {
+  border: 1px solid rgba(108, 108, 108, 0.6);
+  border-radius: 5px;
+}

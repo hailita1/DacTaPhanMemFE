@@ -1,0 +1,47 @@
+<div class="row text-center">
+  <div class="col-12">
+    <h1>Đơn đặt nhà của bạn</h1>
+  </div>
+</div>
+<div class="" *ngFor="let order of orders;">
+  <div class="row m-3 room">
+    <div class="m-5">
+      <div class="row">
+        <div class="col-6">
+          <h1>Người đặt: {{order.personName}}</h1>
+        </div>
+        <div class="col-6">
+        </div>
+        <div class="col-6">
+          <b>Tên nhà: {{order.house.name}}</b>
+        </div>
+        <div class="col-6">
+          <b>Địa chỉ nhà: {{order.house.address}}</b>
+        </div>
+        <div class="col-6">
+          <b>Số điện thoại người thuê: {{order.telephoneNumber}}</b>
+        </div>
+        <div class="col-6">
+          <b>Số điện thoại chủ nhà: 0359813619</b>
+        </div>
+        <div class="col-6">
+          Ngày đặt: {{order.bookingDate.substring(0, 10)| date : 'dd/MM/yyyy'}}
+        </div>
+        <div class="col-6">
+          Từ ngày: <i>{{order.startDate.substring(0, 10)| date : 'dd/MM/yyyy'}}</i>
+          đến: <i>{{order.endDate.substring(0, 10)| date : 'dd/MM/yyyy'}}
+          </i>
+        </div>
+        <div class="col-6">
+          Các dịch vụ có sẵn: <span *ngFor="let utilitiy of order.house.utilities">{{utilitiy.name}}, </span>
+        </div>
+        <div class="col-6">
+          Các dịch vụ đi kèm: <span *ngFor="let service of order.services">{{service.name}}, </span>
+        </div>
+        <div class="col-6">
+          <h5>Tổng tiền:  {{order.totalPrice}}$</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
